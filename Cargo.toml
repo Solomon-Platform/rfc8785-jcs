@@ -1,0 +1,16 @@
+[package]
+name = "rfc8785-jcs"
+version = "0.1.0"
+edition = "2021"
+description = "RFC 8785 JSON Canonicalization Scheme (JCS) plus a named/versioned SHA-256 content hash built on top of it"
+license = "MIT"
+repository = "https://github.com/Library-Core/rfc8785-jcs"
+readme = "README.md"
+keywords = ["json", "canonicalization", "rfc8785", "jcs", "hash"]
+categories = ["encoding", "cryptography"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+thiserror = "1"
